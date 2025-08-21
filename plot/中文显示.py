@@ -2,7 +2,7 @@ from matplotlib.font_manager import FontProperties
 from matplotlib import pyplot as plt
 import numpy as np
 from matplotlib.font_manager import FontManager
-import subprocess
+
 
 mpl_fonts = set(f.name for f in FontManager().ttflist)
 
