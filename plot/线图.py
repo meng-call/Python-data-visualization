@@ -16,7 +16,7 @@ plt.plot(xs, bias_squared, 'r-.', label='bias^2')
 plt.plot(xs, total_error, 'b:', label='total error')
 # 蓝色点线
 plt.plot(xs, 'k-', drawstyle='steps-post', label='steps-post')
-# 阶梯式线
+# 阶梯式线图
 
 # 因为已经对每个序列都指派了标记 # 所以可以自由地布置图例 # loc=9指的是“顶部中央”
 plt.legend(loc=9)
