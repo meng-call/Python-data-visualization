@@ -12,13 +12,13 @@ decile = lambda grade: grade // 10 * 10
 histogram = Counter(decile(grade) for grade in grades)
 # 使用Counter统计每个“十分位”的成绩出现次数
 
-plt.bar([x - 4 for x in histogram.keys()], histogram.values(), width = 8,align = 'edge',color = 'blue',alpha = 0.5)
+plt.bar([x - 4 for x in histogram.keys()], histogram.values(), width = 8,align = 'edge',color = 'blue',alpha = 0.5 )
 # 每个条形向左侧移动4个单位
 # 给每个条形设置正确的宽度
 
 plt.axis([-5, 105, 0, 6])
 # x轴取值从-5到105
-# y轴取值0到5
+# y轴取值0到6
 plt.xticks([10 * i for i in range(11)])  # x轴标记为0，10，...，100
 
 plt.xlabel("十分相")
