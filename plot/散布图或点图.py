@@ -16,4 +16,11 @@ sns.regplot(x='m1', y='unemp', data=trans_data)
 # sns.regplot 自动做线性回归并把拟合直线叠加在散点图上。
 plt.title('Changes in log %s versus log %s' % ('m1', 'unemp'))
 
+sns.pairplot(trans_data, diag_kind='kde', plot_kws={'alpha': 0.2})
+# 散布图矩阵
+
+tips = sns.load_dataset("tips")
+sns.catplot(x='day', y=tips['tip']/tips['total_bill'], row='time', col='smoker', kind='bar', data=tips)
+print(tips.head())
+
 plt.show()
